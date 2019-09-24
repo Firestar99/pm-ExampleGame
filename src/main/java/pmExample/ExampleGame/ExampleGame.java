@@ -19,7 +19,12 @@ public class ExampleGame {
 			glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GLFW_FALSE);
 			windowPointer = glfwCreateWindow(800, 600, "Hi Window!", 0, 0);
 			
+			setup();
+			
 			while (!glfwWindowShouldClose(windowPointer)) {
+				update();
+				
+				render();
 				glfwSwapBuffers(windowPointer);
 				glfwPollEvents();
 				
@@ -30,10 +35,28 @@ public class ExampleGame {
 				}
 			}
 			
+			release();
 			glfwDestroyWindow(windowPointer);
 			
 		} finally {
 			glfwTerminate();
 		}
 	}
+	
+	public void setup() {
+	
+	}
+	
+	public void release() {
+	
+	}
+	
+	public void update() {
+	
+	}
+	
+	public void render() {
+	
+	}
+	
 }
