@@ -31,5 +31,7 @@ dependencies {
     implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-windows"
     implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-macos"
 
+    implementation "org.l33tlabs.twl:pngdecoder:1.0"
+
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
