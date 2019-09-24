@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+ext {
+    lwjglVersion = "3.2.3"
+}
+
+group 'pmExample'
+version '1.0'
+
+sourceCompatibility = 1.11
+mainClassName = "pmExample.ExampleGame.ExampleGame"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.lwjgl:lwjgl:$lwjglVersion"
+    implementation "org.lwjgl:lwjgl:$lwjglVersion:natives-linux"
+    implementation "org.lwjgl:lwjgl:$lwjglVersion:natives-windows"
+    implementation "org.lwjgl:lwjgl:$lwjglVersion:natives-macos"
+    implementation "org.lwjgl:lwjgl-glfw:$lwjglVersion"
+    implementation "org.lwjgl:lwjgl-glfw:$lwjglVersion:natives-linux"
+    implementation "org.lwjgl:lwjgl-glfw:$lwjglVersion:natives-windows"
+    implementation "org.lwjgl:lwjgl-glfw:$lwjglVersion:natives-macos"
+    implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion"
+    implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-linux"
+    implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-windows"
+    implementation "org.lwjgl:lwjgl-opengl:$lwjglVersion:natives-macos"
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
