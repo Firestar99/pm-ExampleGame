@@ -1,4 +1,4 @@
-#OpenGL with Java Example for PM
+# OpenGL with Java Example for PM
 
 LWJGL Website: https://www.lwjgl.org/
 LWJGL3 Maven repo: https://mvnrepository.com/artifact/org.lwjgl
